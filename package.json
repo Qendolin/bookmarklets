@@ -1,0 +1,15 @@
+{
+	"name": "bookmarklets",
+	"version": "1.0.0",
+	"description": "A collection of useful bookmarklets",
+	"dependencies": {},
+	"devDependencies": {
+		"bookmarkleter": "^1.0.1",
+		"minimist": "^1.2.5"
+	},
+	"scripts": {
+		"build": "node build.js"
+	},
+	"author": "",
+	"license": "ISC"
+}
