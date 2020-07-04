@@ -1,0 +1,11 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Index</TITLE>
+<H1>Index</H1>
+<DL><p>
+    <DT><H3>Utils</H3>
+    <DL><p>
+        <DT><A HREF="javascript:void%20function(){let%20a=[],b=[document,...[...document.querySelectorAll(%22iframe%22)].map(b=%3Eb.contentDocument%3FPromise.resolve(b.contentDocument):fetch(`https://cors-anywhere.herokuapp.com:443/${b.src}`,{mode:%22cors%22}).then(a=%3Ea.text()).then(b=%3Enew%20Promise((c,d)=%3E{let%20e=document.createElement(%22iframe%22);e.onerror=d,e.onload=()=%3Ec(e.contentDocument),e.srcdoc=b,a.push(e),document.body.appendChild(e)})))];Promise.allSettled(b).then(a=%3E{var%20b=Number.isNaN;let%20c=a.filter(a=%3E%22fulfilled%22==a.status).map(a=%3E[...a.value.querySelectorAll(%22video,audio%22)]).filter(a=%3Ea.length).flat();if(0==c.length)return%20alert(%22No%20videos%20or%20audios%20found%22);let%20d=c.map((a,b)=%3E`${b},%20${a.tagName.toLowerCase()},%20${a.currentSrc.replace(/\%3F.*|%23.*/,%22%22)}`).join(%22\n%22),e=prompt(%22Select%20media%20index:\n%22+d);%22%22==e||null==e||b(+e)||+e%3E=c.length||(location.href=c[e].currentSrc)}).then(()=%3E{a.forEach(a=%3Ea.remove())})}();">Utils: Find Media</A>
+        <DT><A HREF="javascript:void%20function(){document.body.style=%22position:initial;overflow:initial%22,document.head.appendChild(document.createElement(%22style%22)).innerHTML=%22*{filter:none%20!important}%22,[...document.body.children].find(a=%3E(a.id||%22%22).includes(%22signup_wall_wrapper%22)).remove()}();">Utils: Quora Bypass</A>
+    </DL><p>
+</DL><p>

@@ -1,0 +1,2 @@
+[InternetShortcut]
+URL=javascript:void%20function(){document.body.style=%22position:initial;overflow:initial%22,document.head.appendChild(document.createElement(%22style%22)).innerHTML=%22*{filter:none%20!important}%22,[...document.body.children].find(a=%3E(a.id||%22%22).includes(%22signup_wall_wrapper%22)).remove()}();
