@@ -29,7 +29,7 @@ Promise.allSettled(docs)
 			.flat();
 		if (medias.length == 0) return alert('No videos or audios found');
 		let q = medias
-			.map((m, i) => `${i}, ${m.tagName.toLowerCase()}, ${m.currentSrc.replace(/\?.*|#.*/, '')}`)
+			.map((m, i) => `${i}: ${m.tagName.toLowerCase()}, ${m.currentSrc.replace(/\?.*|#.*/, '')}`)
 			.join('\n');
 		let i = prompt('Select media index:\n' + q);
 		if (i == '' || i == null || Number.isNaN(Number(i)) || Number(i) >= medias.length) return;
