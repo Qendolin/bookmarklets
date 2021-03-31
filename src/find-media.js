@@ -27,13 +27,13 @@ Promise.allSettled(docs)
 			.map((doc) => [...doc.value.querySelectorAll('video,audio')])
 			.filter((e) => e.length)
 			.flat();
-		if (medias.length == 0) return alert('No videos or audios found');
+		if (medias.length == 0) return alert('No video or audio found');
 		let q = medias
-			.map((m, i) => `${i}: ${m.tagName.toLowerCase()}, ${m.currentSrc.replace(/\?.*|#.*/, '')}`)
+			.map((m, i) => `${i + 1}: [${m.tagName.toLowerCase()}] ${m.currentSrc.replace('/\\?.*|#.*/', '')}`)
 			.join('\n');
 		let i = prompt('Select media index:\n' + q);
-		if (i == '' || i == null || Number.isNaN(Number(i)) || Number(i) >= medias.length) return;
-		location.href = medias[i].currentSrc;
+		if (!i || Number(i) > medias.length) return;
+		location.href = medias[i - 1].currentSrc;
 	})
 	.then(() => {
 		tmpFrames.forEach((f) => f.remove());
