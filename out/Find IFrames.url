@@ -1,0 +1,2 @@
+[InternetShortcut]
+URL=javascript:void%20function(){const%20a=[...document.querySelectorAll(%22iframe%22)];if(0==a.length)return%20alert(%22No%20iframes%20found%22);const%20b=a.map((a,b)=%3E`${b+1}:%20[${new%20URL(a.src).hostname}]%20${a.src.replace(%22/\\%3F.*|%23.*/%22,%22%22)}`).join(%22\n%22);let%20c=prompt(%22Select%20iframes%20Index:\n%22+b);!c||+c%3Ea.length||(location.href=a[c-1].src)}();
