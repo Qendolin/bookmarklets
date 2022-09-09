@@ -1,4 +1,4 @@
-// name:remove
+// name:Remove Element
 window.addEventListener('touchstart', async function handle(e) {
 	await e.target.animate(
 		[

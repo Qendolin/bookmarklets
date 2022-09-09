@@ -1,0 +1,2 @@
+[InternetShortcut]
+URL=javascript:void%20function(){window.addEventListener(%22touchstart%22,async%20function%20a(b){await%20b.target.animate([{backgroundColor:%22%23ffffff80%22,filter:%22invert(1)%22},{backgroundColor:%22%23ffffff00%22,filter:%22invert(0)%22}],{duration:500,iterations:2}).finished,confirm(%22Remove%3F%22)%26%26b.target.remove();const%20c=confirm(%22Again%3F%22);c||window.removeEventListener(%22touchstart%22,a)})}();

@@ -1,0 +1,2 @@
+[InternetShortcut]
+URL=javascript:void%20function(){window.location.href.includes(%22www.reddit.%22)%26%26(window.location=window.location.href.replace(%22www.%22,%22i.%22))}();
